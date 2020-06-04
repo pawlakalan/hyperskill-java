@@ -12,6 +12,7 @@ class Pizza {
         stepOfCook.add(bake);
         for (Thread step : stepOfCook) {
             step.start();
+            step.join();
         }
     }
 
